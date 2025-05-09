@@ -6,7 +6,7 @@ import { lazy } from 'react';
 import type { ComponentType } from 'react';
 
 // Mock dependencies
-vi.mock('./Loader', () => ({
+vi.mock('./LoadingFallback', () => ({
   default: () => <div data-testid="loader">Loading...</div>
 }));
 

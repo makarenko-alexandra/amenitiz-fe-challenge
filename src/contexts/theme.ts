@@ -1,11 +1,11 @@
 const theme = {
   colors: {
-    primary: '#0070f3',
-    secondary: '#0070f3',
-    accent: '#0070f3',
-    background: '#fff',
-    text: '#000',
-    error: '#ff0000',
+    primary: '#486B6B',    // Deeper teal for more contrast
+    secondary: '#6A8D73',  // Deeper green for better contrast
+    accent: '#E4C988',     // Warm sand
+    background: '#F9F7F0',  // Eggshell white
+    text: '#4A4A4A',       // Soft charcoal
+    error: '#E76F51',      // Muted terracotta
   },
   fontSizes: {
     small: '0.875rem',

@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react';
 import type { ComponentType, LazyExoticComponent, ReactNode } from 'react';
-import Loader from './Loader';
+import LoadingFallback from './LoadingFallback';
 import ErrorBoundary from './ErrorBoundary';
 
 interface LazyComponentProps {
@@ -8,7 +8,7 @@ interface LazyComponentProps {
   fallback?: ReactNode;
 }
 
-const LazyComponent = ({ component: Component, fallback = <Loader /> }: LazyComponentProps) => {
+const LazyComponent = ({ component: Component, fallback = <LoadingFallback /> }: LazyComponentProps) => {
   return (
     <ErrorBoundary>
       <Suspense fallback={fallback}>
