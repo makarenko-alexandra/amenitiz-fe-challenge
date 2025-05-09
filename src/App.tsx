@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import GrandmastersList from './pages/GrandmastersList';
-import GrandmasterProfile from './pages/GrandmasterProfile';
 import Layout from './components/Layout';
+import { LazyGrandmastersList, LazyGrandmasterProfile } from './pages';
 
+// Define routes with lazy-loaded components
 const router = createBrowserRouter([
   {
     path: '/',
@@ -10,11 +10,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <GrandmastersList />,
+        element: <LazyGrandmastersList />,
       },
       {
         path: 'grandmaster/:username',
-        element: <GrandmasterProfile />,
+        element: <LazyGrandmasterProfile />,
       },
     ],
   },
