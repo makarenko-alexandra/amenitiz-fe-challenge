@@ -1,27 +1,62 @@
-# Amenitiz Front-end Technical Challange 🚀
+# Amenitiz Frontend Challenge
 
-## Introduction
+This is a frontend challenge project built with React, TypeScript, and Vite.
 
-The task is to create a wiki of Chess Grandmasters as defined by Chess.com. We are open to different layouts and styles.
+## Technologies
 
-### What we are looking for:
-- This exercise should be done in React with Typescript. 
-- We do not expect production-ready code. However, we do expect the candidate to point out sub-optimal compromises taken to complete the task
+- **React 19** - Latest version of React
+- **TypeScript** - For type safety
+- **Vite** - Fast build tool
+- **Styled Components** - CSS-in-JS styling
+- **React Query** - For data fetching and state management
+- **Vitest** - Testing framework
 
-📖 Documentation for chess.com's API can be found here: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-games-archive
+## Project Structure
 
-## ♟️ Step 1: List the Grandmasters
+```
+src/
+  ├── assets/        # Static assets like images, fonts, etc.
+  ├── components/    # React components
+  │   ├── ui/        # Reusable UI components
+  │   └── layout/    # Layout components
+  ├── contexts/      # React context providers
+  ├── hooks/         # Custom React hooks
+  ├── pages/         # Page components
+  ├── queries/       # React Query related files
+  ├── styles/        # Global styles
+  ├── test/          # Test setup and utilities
+  ├── types/         # TypeScript type definitions
+  └── utils/         # Utility functions
+```
 
-Using the chess.com API, create a page that lists all the Grandmasters.
+## Getting Started
 
-API endpoint: https://api.chess.com/pub/titled/GM
+### Prerequisites
 
-## ♟️ Step 2: Grandmaster profile page
+- Node.js (version 18+)
+- npm, yarn, or pnpm
 
-Extend the page that you created for the previous step so that if you click on a listed grandmaster, it should take you to a profile page displaying the information from the player endpoint.
+### Installation
 
-API endpoint for player: [https://api.chess.com/pub/player/{username}](https://api.chess.com/pub/player/john)
+```bash
+# Install dependencies
+npm install
 
-## ♟️ Step 3: Add Grandmaster summary
+# Start development server
+npm run dev
 
-On the profile page for a grandmaster that you created in step 2, add a clock that displays the amount of time since they were last online. The time since the user was active should be displayed as HH:MM:SS, and it should update every second.
+# Build for production
+npm run build
+
+# Run tests
+npm run test
+```
+
+## Available Scripts
+
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the app for production
+- `npm run test` - Runs the test suite
+- `npm run test:watch` - Runs the test suite in watch mode
+- `npm run lint` - Runs ESLint
+- `npm run preview` - Previews the production build locally
