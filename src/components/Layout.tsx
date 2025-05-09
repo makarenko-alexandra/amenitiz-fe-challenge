@@ -21,15 +21,6 @@ const Content = styled.main`
   flex-direction: column;
 `;
 
-const Footer = styled.footer`
-  width: 100%;
-  padding: ${({ theme }) => theme.spacing.md};
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: white;
-  text-align: center;
-  margin-top: auto;
-`;
-
 const Layout = () => {
   return (
     <MainContainer>
@@ -39,9 +30,6 @@ const Layout = () => {
       <Content>
         <Outlet />
       </Content>
-      <Footer>
-        <p>Amenitiz Front-end Technical Challenge - Chess Grandmasters Wiki</p>
-      </Footer>
     </MainContainer>
   );
 };
