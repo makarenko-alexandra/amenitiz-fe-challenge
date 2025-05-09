@@ -17,8 +17,6 @@ This is a frontend challenge project built with React, TypeScript, and Vite.
 src/
   ├── assets/        # Static assets like images, fonts, etc.
   ├── components/    # React components
-  │   ├── ui/        # Reusable UI components
-  │   └── layout/    # Layout components
   ├── contexts/      # React context providers
   ├── hooks/         # Custom React hooks
   ├── pages/         # Page components
