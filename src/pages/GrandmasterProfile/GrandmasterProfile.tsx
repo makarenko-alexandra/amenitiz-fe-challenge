@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Title, BackButton } from './GrandmasterProfile.styles';
+import { Container, BackButton } from './GrandmasterProfile.styles';
 import GrandmasterProfileContent from './GrandmasterProfileContent';
 import LoadingFallback from './LoadingFallback';
+import Title from '@/components/Title';
 
 const GrandmasterProfile = () => {
   const navigate = useNavigate();

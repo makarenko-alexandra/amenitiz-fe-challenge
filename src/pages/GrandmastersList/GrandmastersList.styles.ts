@@ -8,11 +8,6 @@ export const Container = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
 `;
 
-export const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.primary};
-  margin-bottom: ${({ theme }) => theme.spacing.md};
-`;
-
 export const GrandmasterLink = styled(Link)`
   display: block;
   padding: ${({ theme }) => theme.spacing.md};

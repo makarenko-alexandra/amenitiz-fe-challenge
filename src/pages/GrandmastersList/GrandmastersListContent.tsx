@@ -1,6 +1,7 @@
 import { useGrandmastersQuery } from '@/queries';
-import { Title, GrandmasterLink } from './GrandmastersList.styles';
+import { GrandmasterLink } from './GrandmastersList.styles';
 import { Virtuoso } from 'react-virtuoso';
+import Title from '@/components/Title';
 
 const GrandmastersListContent = () => {
   const { data } = useGrandmastersQuery();
