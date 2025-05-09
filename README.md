@@ -31,12 +31,15 @@ src/
 
 ### Prerequisites
 
-- Node.js (version 18+)
+- Node.js (version 20+)
 - npm, yarn, or pnpm
 
 ### Installation
 
 ```bash
+# select correct Node version
+nvm use
+
 # Install dependencies
 npm install
 
@@ -56,5 +59,6 @@ npm run test
 - `npm run build` - Builds the app for production
 - `npm run test` - Runs the test suite
 - `npm run test:watch` - Runs the test suite in watch mode
+- `npm run test:coverage` - Calculates test coverage
 - `npm run lint` - Runs ESLint
 - `npm run preview` - Previews the production build locally
